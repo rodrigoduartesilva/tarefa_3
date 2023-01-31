@@ -10,7 +10,8 @@
 
 body {
     width: 700px;
-    margin: auto;
+    margin: 10px auto;
+    background: #E5E5E5;
 }
 
 /*Estilização header*/
@@ -18,7 +19,7 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -32,6 +33,14 @@ nav h1 {
 nav ul {
     display: flex;
     list-style-type: none;
+    padding: 10px 50px;
+    
+}
+
+.menu-header, .menu-footer {
+    background: linear-gradient(55deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    width: 343px;
+    margin-right: 7.5px;
 }
 
 nav ul li {
@@ -40,7 +49,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
 }
+
+
 
 
 

@@ -12,18 +12,20 @@
     <header>
         <nav>
             <h1>Kreativ</h1>
-            <ul>
-                <li><a href="./index.html" target="_blank">Home</a></li>
-                <li><a href="./contato.html" target="_blank">Contato</a></li>
-            </ul>
+            <div class="menu-header">
+                <ul>
+                    <li><a href="./index.html" target="_blank">Home</a></li>
+                    <li><a href="./contato.html" target="_blank">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section>
             <div class="form-section">
-                <h2>Vamos começar?</h2>
                 <form action="">
                     <div class="new-user-form">
+                        <h2>Vamos começar?</h2>
                         <label for="">Nome completo</label>
                         <input type="text" placeholder="João Silva">
     
@@ -31,7 +33,7 @@
                         <input type="email" placeholder="seunome@email.com">
     
                         <label for="">Número de Telefone</label>
-                        <input type="tel" placeholder="(00) 00000-0000">
+                        <input type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="(00) 00000-0000">
     
                         <label for="">Senha</label>
                         <input type="password" placeholder="Digite sua senha">
@@ -67,10 +69,12 @@
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 <li><a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
             </ul>
-            <ul>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Suporte</a></li>
-            </ul>
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
         </nav>
     </footer>
 </body>
