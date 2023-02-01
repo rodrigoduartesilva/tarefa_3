@@ -1,0 +1,53 @@
+section div h2 {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #2f6066;
+}
+
+form .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 380px;
+    height: 300px;
+    padding: 25px;
+    background: #FFFFFF;
+    border-radius: 3px;
+}
+
+input, textarea, button {
+    all: unset;
+    background: #FFFFFF;
+}
+
+input, textarea {
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: start;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #284A5E;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    text-align: center;
+    margin-top: 12px;
+    padding: 6px 5px;
+    background: linear-gradient(93.38deg, #496F74 -3.47%, #2D4F61 84.29%);
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .9;
+}
