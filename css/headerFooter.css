@@ -14,7 +14,7 @@ body {
     background: #E5E5E5;
 }
 
-/*Estilização header*/
+/*Estilização header e footer*/
 
 nav {
     display: flex;
@@ -28,19 +28,29 @@ nav h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    position: absolute;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
     padding: 10px 50px;
-    
 }
 
 .menu-header, .menu-footer {
+    text-shadow: 1px 1px 1px #2f6066;
+}
+
+.menu-header{
     background: linear-gradient(55deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
     width: 343px;
-    margin-right: 7.5px;
+    margin-left: 350px;
+}
+
+.menu-footer {
+    background: linear-gradient(55deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    width: 343px;
+    margin-left: 350px;
 }
 
 nav ul li {
@@ -54,9 +64,6 @@ nav ul li a {
     color: #FFFFFF;
 }
 
-
-
-
-
-
-/*Estilização footer*/
+nav ul li a:hover {
+    opacity: 0.4;
+}

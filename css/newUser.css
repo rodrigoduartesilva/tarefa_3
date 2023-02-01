@@ -16,12 +16,13 @@ main {
 .new-user-form {
     display: flex;
     flex-direction: column;
-    padding: 80px 50px;
+    padding: 25px 50px;
     background: #FFFFFF;
 }
 
 .new-user-form h2 {
-    font-size: 22px;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 .new-user-form input {
@@ -44,7 +45,7 @@ main {
 }
 
 .new-user-form label {
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 400;
     font-size: 15px;
 }
@@ -53,6 +54,11 @@ main {
     margin: 5px 0 20px 0;
     padding: 3px 5px;
     height: 30px;
+}
+
+.new-user-form select:focus {
+    border: 1px solid #284A5E;
+    border-radius: 3px;
 }
 
 .new-user-form button {
@@ -72,8 +78,12 @@ main {
 }
 
 .new-user-form span {
-    margin-top: 12px;
+    margin-top: 8px;
     text-align: center;
+}
+
+.new-user-form span a:hover {
+    opacity: 0.6;
 }
 
 .new-user-form a {

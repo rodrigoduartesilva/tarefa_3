@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+body {
+    max-height: 100vh;
+    margin: 10px 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+}
+
+header, footer {
+    width: 600px;
+    height: 50px;
+    background: linear-gradient(64deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #2f6066;
+}
+
+nav ul li a:hover {
+    opacity: 0.5;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer nav .social-icons {
+    width: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer nav .links-footer {
+    width: 145px;
+    align-items: center;
+    justify-content: space-between;
+}
