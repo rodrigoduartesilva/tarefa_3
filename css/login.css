@@ -1,0 +1,118 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 650px;
+    height: 500px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-user-form {
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 50px;
+    background: #FFFFFF;
+}
+
+.login-user-form h2 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.login-user-form input {
+    all: unset;
+    width: 280px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.login-user-form ::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.login-user-form input:focus {
+    border: 1px solid #284A5E;
+}
+
+.login-user-form label {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.login-user-form select {
+    margin: 5px 0 20px 0;
+    padding: 3px 5px;
+    height: 30px;
+}
+
+.login-user-form select:focus {
+    border: 1px solid #284A5E;
+    border-radius: 3px;
+}
+
+.login-user-form button {
+    all: unset;
+    text-align: center;
+    margin-top: 12px;
+    padding: 6px 5px;
+    background: linear-gradient(93.38deg, #496F74 -3.47%, #2D4F61 84.29%);
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.login-user-form button:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+.login-user-form span {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.login-user-form span a:hover {
+    opacity: 0.6;
+}
+
+.login-user-form a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #476D73;
+    text-decoration: none;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    width: 343px;
+    height: 500px;
+    padding: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px #2f6066;
+}
+
+.quote-container p {
+    margin-top: 14px;
+    margin-right: 187px;
+    font-size: 12px;
+}
