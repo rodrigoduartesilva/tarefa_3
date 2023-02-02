@@ -24,17 +24,20 @@
     <main>
         <section>
             <div class="form-section">
-                <form action="">
+                <form class="form-space" action="">
+                    <section id="login-success" class="login-success">
+    
+                    </section>
                     <div class="login-user-form">
                         <h2>Vamos começar?</h2>
     
                         <label for="">Endereço de Email</label>
-                        <input type="email" placeholder="seunome@email.com">
+                        <input class="input-email" type="email" placeholder="seunome@email.com">
     
                         <label for="">Senha</label>
-                        <input type="password" placeholder="Digite sua senha">
+                        <input class="input-password" type="password" placeholder="Digite sua senha">
     
-                        <button>Login</button>
+                        <button id="btn-login">Login</button>
                         <span>Não é cadastrado? <a href="./newUser.html">Criar usuário</a></span>
                     </div>
                 </form>
@@ -60,5 +63,7 @@
             </div>
         </nav>
     </footer>
+
+    <script src="./js/script.login.js"></script>
 </body>
 </html>
