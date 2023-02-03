@@ -24,31 +24,31 @@
     <main>
         <section>
             <div class="form-section">
-                <form action="">
+                <form class="form-container" action="">
                     <div class="new-user-form">
-                        <h2>Vamos começar?</h2>
-                        <label for="">Nome completo</label>
-                        <input type="text" placeholder="João Souza">
+                        <h2 class="form-subtitle">Vamos começar?</h2>
+                        <label for="">Nome completo<sup>*</sup></label>
+                        <input class="input-name" type="text" placeholder="João Souza">
     
-                        <label for="">Endereço de Email</label>
-                        <input type="email" placeholder="seunome@email.com">
+                        <label for="">Endereço de Email<sup>*</sup></label>
+                        <input class="input-email" type="email" placeholder="seunome@email.com">
     
                         <label for="">Número de Telefone</label>
-                        <input type="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="(00) 00000-0000">
+                        <input class="input-tel" type="tel" placeholder="(00) 00000-0000">
     
-                        <label for="">Senha</label>
-                        <input type="password" placeholder="Digite sua senha">
+                        <label for="">Senha<sup>*</sup></label>
+                        <input class="input-password" type="password" placeholder="Digite sua senha">
     
-                        <label for="">País</label>
-                        <select id="paises">
-                            <option value="">Selecione seu país</option>
+                        <label for="">País<sup>*</sup></label>
+                        <select id="countries-option">
+                            <option value="none">Selecione seu país</option>
                             <option value="brasil">Brasil</option>
                             <option value="argentina">Argentina</option>
                             <option value="bolivia">Bolivia</option>
                             <option value="uruguai">Uruguai</option>
                         </select>
     
-                        <button>Criar usuário</button>
+                        <button class="btn-create-user">Criar usuário</button>
                         <span>Já é cadastrado? <a href="./login.html">Login</a></span>
                     </div>
                 </form>
@@ -74,5 +74,7 @@
             </div>
         </nav>
     </footer>
+
+    <script src="./js/newUser.js"></script>
 </body>
 </html>

@@ -13,10 +13,20 @@ main {
     justify-content: center;
 }
 
+.subtitle-message {
+    display: flex;
+    align-items: center;
+    width: 392px;
+    height: 581px;
+    padding: 50px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
 .new-user-form {
     display: flex;
     flex-direction: column;
-    padding: 25px 50px;
+    padding: 19px 50px;
     background: #FFFFFF;
 }
 
