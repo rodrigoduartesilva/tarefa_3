@@ -21,6 +21,7 @@ main {
     padding: 50px;
     text-align: center;
     background-color: #FFFFFF;
+    color: #496F74;
 }
 
 .new-user-form {
@@ -60,8 +61,23 @@ main {
     font-size: 15px;
 }
 
+.tel-container {
+    display: flex;
+}
+
+.tel-container .cod-country {
+    width: 16%;
+    margin-right: 2px;
+    background: #E6E0E0;
+    cursor: not-allowed;
+}
+
+.tel-container .input-tel {
+    width: 84%;
+}
+
 .new-user-form select {
-    margin: 5px 0 20px 0;
+    margin: 5px 0 2px 0;
     padding: 3px 5px;
     height: 30px;
 }
@@ -80,10 +96,15 @@ main {
     font-size: 16px;
     color: #FFFFFF;
     border-radius: 3px;
+    margin-top: 17.5px;
 }
 
 .new-user-form button:hover {
     cursor: pointer;
+    opacity: .9;
+}
+
+.new-user-form button:focus {
     opacity: .9;
 }
 

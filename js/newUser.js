@@ -1,9 +1,60 @@
 let inputName = document.querySelector(".input-name");
 let inputEmail = document.querySelector(".input-email");
 let inputTel = document.querySelector(".input-tel");
+let inputCodCountry = document.querySelector(".cod-country");
 let inputPass = document.querySelector(".input-password");
 let countriesOption = document.querySelector("#countries-option");
 let btnCreateUser = document.querySelector(".btn-create-user");
+let addMaxLength = document.createAttribute("maxlength");
+
+function mascara(telefone) {
+    if (countriesOption.value === 'brasil') {
+        inputCodCountry.value = '+55';
+        addMaxLength.value = 15;
+        inputTel.setAttributeNode(addMaxLength);
+
+        if (telefone.value.length === 0)
+            telefone.value = '(' + telefone.value;
+
+        if (telefone.value.length === 3)
+            telefone.value = telefone.value + ') ';
+
+        if (telefone.value.length === 10)
+            telefone.value = telefone.value + '-';
+
+    } else if (countriesOption.value === 'argentina') {
+        inputCodCountry.value = '+54';
+        addMaxLength.value = 14;
+        inputTel.setAttributeNode(addMaxLength);
+
+        if (telefone.value.length === 0)
+            telefone.value = '9 ' + telefone.value;
+
+        if (telefone.value.length === 4)
+            telefone.value = telefone.value + ' ';
+
+        if (telefone.value.length === 9)
+            telefone.value = telefone.value + '-';
+    } else if (countriesOption.value === 'bolivia') {
+        inputCodCountry.value = '+591';
+        addMaxLength.value = 9;
+        inputTel.setAttributeNode(addMaxLength);
+
+        if (telefone.value.length === 0)
+            telefone.value = '2 ' + telefone.value;
+
+        if (telefone.value.length === 2)
+            telefone.value = telefone.value + '2';
+    } else if (countriesOption.value === 'uruguai') {
+        inputCodCountry.value = '+598';
+        addMaxLength.value = 10;
+        inputTel.setAttributeNode(addMaxLength);
+
+        if (telefone.value.length === 0)
+            telefone.value = '2 ' + telefone.value;
+    }
+
+}
 
 btnCreateUser.addEventListener('click', function (event) {
     let formNewUser = document.querySelector(".new-user-form");
@@ -35,6 +86,13 @@ btnCreateUser.addEventListener('click', function (event) {
         setTimeout(() => {
             containerForm.appendChild(divCreate).remove();
             containerForm.appendChild(formNewUser);
-        }, 2000);
+        }, 3000);
+
+        inputName.value = '';
+        inputEmail.value = '';
+        inputCodCountry.value = '';
+        inputTel.value = '';
+        inputPass.value = '';
+        countriesOption.value = 'none';
     }
 });

@@ -32,13 +32,7 @@
     
                         <label for="">Endereço de Email<sup>*</sup></label>
                         <input class="input-email" type="email" placeholder="seunome@email.com">
-    
-                        <label for="">Número de Telefone</label>
-                        <input class="input-tel" type="tel" placeholder="(00) 00000-0000">
-    
-                        <label for="">Senha<sup>*</sup></label>
-                        <input class="input-password" type="password" placeholder="Digite sua senha">
-    
+
                         <label for="">País<sup>*</sup></label>
                         <select id="countries-option">
                             <option value="none">Selecione seu país</option>
@@ -47,6 +41,15 @@
                             <option value="bolivia">Bolivia</option>
                             <option value="uruguai">Uruguai</option>
                         </select>
+    
+                        <label for="">Número de Telefone</label>
+                        <div class="tel-container">
+                            <input class="cod-country" type="text" disabled>
+                            <input class="input-tel" type="tel" name="telefone" size="20" onkeypress="mascara(this)">
+                        </div>
+    
+                        <label for="">Senha<sup>*</sup></label>
+                        <input class="input-password" type="password" placeholder="Digite sua senha">
     
                         <button class="btn-create-user">Criar usuário</button>
                         <span>Já é cadastrado? <a href="./login.html">Login</a></span>

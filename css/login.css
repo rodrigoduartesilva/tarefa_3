@@ -20,9 +20,7 @@ main {
     margin-left: 50px;
     margin-right: 20px;
     text-align: center;
-    background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #496F74;
 }
 
 .login-user-form {
@@ -89,6 +87,10 @@ main {
 
 .login-user-form button:hover {
     cursor: pointer;
+    opacity: .9;
+}
+
+.login-user-form button:focus {
     opacity: .9;
 }
 
